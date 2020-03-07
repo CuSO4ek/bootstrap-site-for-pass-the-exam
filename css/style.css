@@ -1,0 +1,253 @@
+.container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: white;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+  .row {
+    margin-bottom: 20px;
+  }
+
+.body  {
+  height: 300px;
+  padding-bottom: 2px;
+}
+
+.header {
+  height: 100px;
+}
+
+.logo {
+  margin-top: 10px;
+  background-image: url('../img/logo.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100px;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.row {
+	margin-right: auto;
+}
+
+.--navbar {
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 250, 250, 0.3);
+  margin-bottom: 20px;
+}
+
+  .nav>li>a {
+    color: black;
+  }
+
+.nav-header {
+  text-align: center;
+  padding: 0.5em;
+}
+
+.content>img {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  transition: 1s ease-in-out;
+  margin: 10px 0 10px 0;
+  border-radius: 30px;
+}
+
+  .content>img:hover {
+    transform: scaleX(1.03) scaleY(1.03);
+    transition: 1s ease-in-out;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  }
+
+.content {
+  height: inherit;
+  border-radius: 20px;
+  padding: 1em;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+i.fa {
+  white-space: nowrap;
+}
+
+div.contacts {
+  width: 100%;
+  height: 30px;
+  font-size: 18px;
+}
+
+div.social {
+  transform: translateX(50%);
+  letter-spacing: 7px;
+  width: 50%;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #282828;
+}
+
+@media screen and (max-width:991px) {
+  div.social {
+    font-size: 25px;
+    letter-spacing: 3px;
+  }
+
+  div.contacts {
+    font-size: 12px;
+    height: 20px;
+  }
+
+}
+
+@media screen and (min-width:991px) and (max-width:1199px) {
+  div.social {
+    font-size: 25px;
+  }
+
+  div.contacts {
+    font-size: 16px;
+    height: 25px;
+  }
+
+}
+
+div.social>a {
+  text-decoration: none;
+  color: white;
+  transition: 1s;
+}
+
+div.social>a:hover {
+  color: #ff6700;
+  transition: 1s;
+}
+
+.drop {
+  text-align: center;
+  transition: 1s ease-out;
+}
+
+li.drop.open {
+  margin-bottom: 202px;
+  transition: 1s ease-out;
+}
+
+li.drop ul{
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  top:-200%;
+  visibility: hidden;
+  transform: scaleY(0);
+}
+li.drop.open>ul {
+  top: 100%;
+  padding: 0;
+  transition: 0.5s ease-out;
+  visibility: visible;
+  height: inherit;
+  width: inherit;
+  border: 0;
+  text-decoration: none;
+  list-style-type: none;
+  text-align: center;
+  transform: scaleY(1);
+}
+
+
+li.drop.open>ul>a {
+  color: black;
+  text-decoration: none;
+}
+li.drop.open>ul>a>li{
+  padding: 10px 92px;
+}
+
+  li.drop.open>ul>a>li:hover {
+    background-color: whitesmoke;
+  }
+
+.text-adres, .text-phone {
+  display: inline-block;
+  visibility: hidden;
+  transform: translateX(100%);
+}
+
+.icon-adres, .icon-phone {
+  display: inline-block;
+}
+
+.text-adres.highlight, .text-phone.highlight {
+  visibility: visible;
+  transform: translateX(0%);
+  transition: 0.5s ease-out;
+}
+
+.drop {
+  text-align: center;
+}
+
+li.drop ul{
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  top:-200%;
+  visibility: hidden;
+  transform: scaleY(0);
+  transition: 1s ease-in;
+}
+li.drop.open>ul {
+  top: 100%;
+
+  padding: 0;
+  transition: 1s ease-out;
+  visibility: visible;
+  height: inherit;
+  width: inherit;
+  border-radius: 5%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  list-style-type: none;
+  text-align: center;
+  transform: scaleY(1);
+}
+
+
+li.drop.open>ul>a {
+  color: black;
+  text-decoration: none;
+}
+li.drop.open>ul>a>li{
+  padding: 10px 92px;
+}
+
+  li.drop.open>ul>a>li:hover {
+    background-color: whitesmoke;
+  }
+
+.text-adres, .text-phone {
+  display: inline-block;
+  visibility: hidden;
+  transform: translateX(100%);
+}
+
+.icon-adres, .icon-phone {
+  display: inline-block;
+}
+
+.text-adres.highlight, .text-phone.highlight {
+  visibility: visible;
+  transform: translateX(0%);
+  transition: 0.5s ease-out;
+}
